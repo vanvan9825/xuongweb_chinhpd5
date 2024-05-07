@@ -1,0 +1,42 @@
+.box{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: violet;
+}
+.box3{
+    background-color: blue;
+}
+.box4{
+    background-color: green;
+}
+.box5{
+    background-color: yellowgreen;
+}
+
+.container{
+    margin: 0;
+    width: 90vw;
+    height: 100vh;
+    background-color: aquamarine;
+
+    display: flex;
+
+    /* chiều căn row: ngang, column: dọc */
+    flex-direction: row;
+
+    /* căn theo chiều ngang : space-between, space-around, space-evenly, center */
+    justify-content: space-evenly;
+
+    /* căn theo chiều dọc */
+    align-items: center;
+
+    /* xuống dòng */
+    flex-wrap: wrap;
+}

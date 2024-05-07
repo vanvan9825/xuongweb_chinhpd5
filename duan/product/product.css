@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heart:hover{
+    color: red;
+
+    z-index: 100;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg,#37a764,#1f1fa2);
+
+    display: flex;
+    /* căn theo chiều ngang */
+    justify-content: center;
+    /* căn theo chiều dọc */
+    align-items: center;
+}
+
+.card{
+    /* chiều ngang */
+    width: 320px;
+    /* chiều dọc */
+    height: 400px;
+    /* màu nền */
+    background-color: #11112c;
+    /* bo góc */
+    border-radius: 15px;
+    /* cách các phần tử bên trong */
+    padding: 20px;
+
+}
+
+.card__icon{
+    display: flex;
+    justify-content: space-between;
+    z-index: 100 ;
+}
+
+.card__icon i {
+    color: #fff;
+    font-size: 24px;
+    /* di chuột vào icon thì hiển thị bàn tay */
+    cursor: pointer;
+}
+
+.card__img{
+    /* chiều ngang bằng 90% của card */
+    width: 90%;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.card__img .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.card:hover .card__img{
+    transform: translateY(-80px) rotate(-20deg);
+}
+
+.info__name{
+    /* căn giữa chữ */
+    text-align: center;
+    color: #37a764;
+    font-size: 26px;
+    transition: all 0.5s;
+
+}
+
+.info__price{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    transition: all 0.5s;
+}
+
+.card:hover .info__name {
+    transform: translateX(-30px) translateY(-40px);
+}
+
+.card:hover .info__price{
+    transform: translate(-115px, -35px);
+}
+
+
+.card__size,.card__color{
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.card__size{
+    margin-top: 100px;
+    transition: all 0.5s;
+}
+
+.size__heading,.color__heading{
+    color: #fff;
+    font-size: 24px ;
+}
+
+.card__size span{
+    background-color: #e5e5e5;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.card__size span:hover{
+    background-color: #1f1fa2;
+    color: #fff;
+}
+
+.card__color span {
+    width: 20px;
+    height: 20px;
+    /* background-color: #fff; */
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.card__color .red{
+    background-color: red;
+}
+
+.card__color .black{
+    background-color: black;
+}
+
+.card__color .green{
+    background-color: green;
+}
+
+.card__color .yellow{
+    background-color: yellow;
+}
+
+.card:hover .card__size{
+    margin-top: -20px;
+}
+
+.card__size,.card__color,.card__btn{
+    opacity: 0;
+}
+
+.card:hover .card__size,
+.card:hover .card__color,
+.card:hover .card__btn{
+    opacity: 1;
+}
+
+.like,.cart{
+    z-index: 1000;
+}

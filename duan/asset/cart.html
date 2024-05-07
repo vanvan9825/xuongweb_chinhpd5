@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- font chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+     <link rel="stylesheet" href="./css/base1.css">
+</head>
+
+<body>
+    
+
+
+      
+        <div id="modal" class="modal">
+            <div id="modal__overlay" class="modal__overlay"></div>
+            <div class="modal__content">
+                <!-- thẻ của phần đăng nhập -->
+            </div>
+        </div>
+        
+        <article>
+            <div class="cart__noidung">
+                <div class="cart_noidung_dathang">
+                    <table class="cart_noidung_dat_hang">
+                        <tr class="cart_noidung_dat_hang_hangmuc">
+                            <th colspan="2">Product</th>
+                            <th>Price</th>
+                            <th>Quantily</th>
+                            <th>Subtotal</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td><br><br><br></td>
+                        </tr>
+                        <tr class="cart_noidung_dat_hang_don">
+                            <td class="cart_noidung_dat_hang_don_td">
+                                <div class="cart_noidung_dat_hang_img"><img width="108" height="105"
+                                        src="/img/chitietsanpham.png" alt=""></div>
+                            </td>
+                            <td class="cart_noidung_dat_hang_don_td">Asgaard sofa</td>
+                            <td class="cart_noidung_dat_hang_don_td">25.000.000đ</td>
+                            <td>
+                                <center>
+                                    <div class="cart_noidung_dat_hang_don_sl">1</div>
+                                </center>
+                            </td>
+                            <td class="cart_noidung_dat_hang_don_giasp">25.000.000đ</td>
+                            <td class="cart_noidung_dat_hang_don_td">
+                                <center><i class="fa-solid fa-trash"></i></center>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cart__noidung__thanhtoan">
+                    <h2>Cart Totals</h2>
+                    <div class="cart__noidung__thanh_toan">
+                        <p class="cart__noidung__thanh_toan_sp">Subtotal</p>
+                        <p class="cart__noidung__thanh_toan_gia">25.000.000đ</p>
+                    </div>
+                    <div class="cart__noidung__thanh_toan">
+                        <p class="thanh_toan_tongsp">Total</p>
+                        <p class="thanh_toan_tonggia">25.000.000đ</p>
+                    </div>
+                    <center><button class="cart__noidung__thanhtoan_button">Check Out</button></center>
+                </div>
+            </div>
+        </article>
+
+
+
+    </div>
+   
+
+
+    </div>
+    <script>
+        // lấy element của nút đăng nhập
+        var login = document.getElementById('login');
+
+        //lây modal
+        var modal = document.getElementById('modal');
+
+        // khai báo 1 sự kiện click bằng 1 function
+        // khi nhấn nút đăng nhập thì hiển thị modal
+        login.onclick = function () {
+            modal.style.display = 'flex';
+        }
+
+        // tắt Modal
+        var modal__overlay = document.getElementById('modal__overlay');
+
+        modal__overlay.onclick = function () {
+            modal.style.display = 'none';
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+.anh{
+    width: 100%;
+    height:500px;
+    background-image:linear-gradient(0,rgb(255, 255, 255,0.7),rgba(255, 255, 255,0.7)), url(/img/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 50%;
+    padding-top: 100px;
+   
+}
+.anh h2{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px ;
+}
+.anh p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 80px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.breadcrumb{
+    height: 70px;
+    padding-left: 60px;
+    
+    background-color:  #F9F1E7;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb_item{
+    height: 30px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+    padding-right: 10px;
+}
+
+
+.breadcrumb_item img {
+    height:24px;
+    padding:0 10px;
+}
+
+.border-left-1{
+    border-right: 1px solid gray;
+}
+
+.box1{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.breadcrumb_right{
+    display: flex;
+    align-items: center;
+    margin-left: 480px;
+}
+
+.breadcrumb_r{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.text-clr-1{
+    color: gray;
+}
+
+.box2{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin: 10px;
+}
+
+
+.article{
+    margin: 0 auto;
+    
+    height: 600px;
+  border-bottom: 1px solid gray;
+  margin: 50px 0;
+   
+}
+
+.toanbo{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.allproduct{
+    padding-top: 40px;
+}
+.product{
+    width: 25%;
+}
+
+.layout{
+
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.bonanh{
+    margin: 0 auto;
+
+    padding-top: 30px  ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bonanh img{
+    width: 500px;
+    height:450px ;
+    margin: 10px;
+}
+.blog{
+
+    margin: 0 auto;
+}
+.blog_thongtin{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.blog_thongtin{
+    width: 100%;
+    margin-top:44px;
+}
+
+.blog_anh{
+    width: 49%;
+    margin-right: 2%;
+}
+
+.blog_anh img{
+    width: 100%;
+    height: 250px;
+}
+
+.blog_nd{
+    width: 47%;
+}
+
+.blog_tieude{
+    color:#3A3A3A;
+}
+.blog_noidung{
+    color:#898989;
+}
+
+.blog_about{
+    text-align: right;
+}
+.blog_about>span{
+    color:#3A3A3A;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+
+.footer__tren{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FAF3EA;
+    height: 270px;
+}
+.footer__tren_icon{
+    display: flex;
+}
+.footer__tren_icon_i i{
+    font-size: 40px;
+    line-height: 150%;
+    
+}
+.footer__tren_icon_phai h3{
+    font-size: 25px;
+    color:#242424;
+    line-height: 120%;
+}
+.footer__tren_icon_phai p{
+    font-size: 20px;
+    line-height: 120%;
+    color: #898989;
+}
+.footer{
+    margin: 0 auto;
+    padding: 0;
+    border-top: 1px solid #9F9F9F;
+}
+.footer__giua{
+    margin: 5% auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+.footer__giua_doc{
+    margin: 0 1%;
+}
+.footer__giua_doc_logo img{
+    height: 36px;
+    margin-bottom: 30px;
+}
+.footer__giua_doc_p{
+    width: 90%;
+    color: #9F9F9F;
+    font-size: 16px;
+    line-height: 24px;
+}
+.footer__cuoi{
+    margin: 0 auto;
+    width: 90%;
+}
+.footer__cuoi p{
+    margin: 5% 0;
+}
+.footer__giua_doc_tieude {
+    color:#9F9F9F;
+    font-size: 16px;
+    line-height: 24px;
+}
+.footer__giua_doc_nd {
+    color: #000000;
+    font-size: 16px;
+    margin-top: 50px;
+}
+.footer__giua_doc_noidung{
+    margin-top: 50px;
+    display: flex;
+}
+.footer__giua_doc_trai{
+    color: #9F9F9F;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: underline black; 
+}
+.footer__giua_doc_phai{
+    color:#000000;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: underline black;
+    margin-left: 10px;
+}
